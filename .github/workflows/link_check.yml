@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Check all markdown, html and reStructuredText files in repo (default)
+          args: --accept 429
 
       - name: Link Checker
         id: lychee
