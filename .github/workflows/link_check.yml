@@ -18,9 +18,9 @@ jobs:
           # Check all markdown, html and reStructuredText files in repo (default)
           args: --accept=200,403,429 --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
           # Use json as output format (instead of markdown)
-          format: json
+          # format: json
           # Use different output file path
-          output: ./out.md
+          # output: ./out.md
           # Use a custom GitHub token, which 
           token: ${{ secrets.CUSTOM_TOKEN }}
           # Fail action on broken links
