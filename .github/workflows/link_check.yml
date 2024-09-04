@@ -13,10 +13,18 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Link Checker
-        id: lychee
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --accept=429
+          # Check all markdown, html and reStructuredText files in repo (default)
+          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
+          # Use json as output format (instead of markdown)
+          format: json
+          # Use different output file path
+          output: /tmp/foo.txt
+          # Use a custom GitHub token, which 
+          token: ${{ secrets.CUSTOM_TOKEN }}
+          # Don't fail action on broken links
+          fail: false
 
      # - name: Create Issue From File
      #   if: env.lychee_exit_code != 0
