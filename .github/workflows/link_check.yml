@@ -20,11 +20,11 @@ jobs:
           # Use json as output format (instead of markdown)
           format: json
           # Use different output file path
-          output: /tmp/foo.txt
+          output: ./out.md
           # Use a custom GitHub token, which 
           token: ${{ secrets.CUSTOM_TOKEN }}
-          # Don't fail action on broken links
-          fail: false
+          # Fail action on broken links
+          fail: true
 
      # - name: Create Issue From File
      #   if: env.lychee_exit_code != 0
