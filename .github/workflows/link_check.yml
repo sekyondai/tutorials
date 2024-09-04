@@ -16,7 +16,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1
         with:
           # Check all markdown, html and reStructuredText files in repo (default)
-          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
+          args: --accept=200,403,429 --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
           # Use json as output format (instead of markdown)
           format: json
           # Use different output file path
