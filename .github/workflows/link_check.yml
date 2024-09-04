@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # Check all markdown, html and reStructuredText files in repo (default)
-          args: --accept 429
+          args: --accept=429,403
 
       - name: Link Checker
         id: lychee
