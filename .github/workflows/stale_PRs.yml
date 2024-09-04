@@ -28,12 +28,12 @@ jobs:
           exempt-all-assignees: false
           exempt-all-milestone: false
           exempt-all-projects: false
-          exempt-assignees: ''
-          exempt-issue-labels: ''
-          exempt-pr-labels: ''
-          exempt-milestones: ''
-          exempt-projects: ''
-          exempt-issue-milestones: ''
-          exempt-pr-milestones: ''
-          exempt-issue-projects: ''
-          exempt-pr-projects: ''
+          #exempt-assignees: ''
+          #exempt-issue-labels: ''
+          #exempt-pr-labels: ''
+          #exempt-milestones: ''
+          #exempt-projects: ''
+          #exempt-issue-milestones: ''
+          #exempt-pr-milestones: ''
+          #exempt-issue-projects: ''
+          #exempt-pr-projects: ''
